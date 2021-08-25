@@ -22,10 +22,16 @@ setTodos(
   todos.map(el=> el.id === ID? {...el, isDone:!el.isDone  }: el  )
 )
 }
+
+const addHandler=(newTodo)=>{
+  setTodos(
+    [...todos, newTodo]
+  )
+  }
   return (
     <div className="App">
       <h1> TO DO APP !!</h1>
-      <AddTodo/>
+      <AddTodo  addHandler={addHandler}  />
       <TodoList   todos={todos}   deleteHandler={deleteHandler} doneHandler={doneHandler}  />
     </div>
   );
