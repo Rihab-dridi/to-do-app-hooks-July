@@ -32,5 +32,12 @@ setInput('')
         </div>
     )
 }
+
+// readin the input that the user is writing 
 //step1: create a state in witch I will store the content in the input 
 //step 2 : set the state so it will take the value of e.target.value 
+//step3: link the function to the onChange event 
+
+//Adding the new todo to the todos table 
+//step 4: add an object of the ask in which the text property will take the value of the input 
+//step5: link  the function to the event onClick 

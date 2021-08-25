@@ -25,3 +25,4 @@ const doneTodo=()=>{
         </div>
     )
 }
+// check if the property of the id is true : the textDecoration property will be line-through, else it will do nothing 
